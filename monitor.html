@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ziad Elmimy">
+    <meta name="description" content="This is a website to monitor the measurements of medical wearable">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="Icons/app-icons.png">
+    <link rel="stylesheet" href="Style/monitor.css">
+
+    <title>Medical monitor</title>
+</head>
+<body>
+    <div class="monitor">
+        <div class="monitor-header">
+            <p class="monitor-title">Measurements</p>
+            <img class="refresh-icon" src="Icons/refresh-page-option.png" alt="refresh icon">
+        </div>
+
+        <div class="sensors-measurements">
+            <div class="sensor-container">
+                <div class="sensor-container-header">
+                    <div class="sensor-container-title">
+                        Heart Rate
+                    </div>
+                    <div class="sensor-container-indicator">
+                        <img class="up-icon" data-sensor-measure="heart-rate" src="Icons/arrow-up.png" alt="up icon">
+                        <img class="down-icon" data-sensor-measure="heart-rate" src="Icons/arrow-down.png" alt="down icon">
+                    </div>
+                </div>
+
+                <div class="sensor-container-content">
+                    <div>
+                        <img class="sensor-icon" src="Icons/heart-rate.png" alt="heart rate icon">
+                    </div>
+                    <div class="heart-rate-value">89</div>
+                </div>
+            </div>
+
+            <div class="sensor-container">
+                <div class="sensor-container-header">
+                    <div class="sensor-container-title">
+                        SPO2
+                    </div>
+                    <div class="sensor-container-indicator">
+                        <img class="up-icon" data-sensor-measure="spo2" src="Icons/arrow-up.png" alt="up icon">
+                        <img class="down-icon" data-sensor-measure="spo2" src="Icons/arrow-down.png" alt="down icon">
+                    </div>
+                </div>
+
+                <div class="sensor-container-content">
+                    <div>
+                        <img class="sensor-icon" src="Icons/oxygen.png" alt="heart rate icon">
+                    </div>
+                    <div class="spo2-value">99%</div>
+                </div>
+            </div>
+
+            <div class="sensor-container">
+                <div class="sensor-container-header">
+                    <div class="sensor-container-title">
+                        Temperature
+                    </div>
+                    <div class="sensor-container-indicator">
+                        <img class="up-icon" data-sensor-measure="temperature" src="Icons/arrow-up.png" alt="up icon">
+                        <img class="down-icon" data-sensor-measure="temperature" src="Icons/arrow-down.png" alt="down icon">
+                    </div>
+                </div>
+
+                <div class="sensor-container-content">
+                    <div>
+                        <img class="sensor-icon" src="Icons/temp.png" alt="heart rate icon">
+                    </div>
+                    <div class="temperature-value">37.5</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="Script/monitor.js" type="module">
+    </script>
+</body>
+</html>
