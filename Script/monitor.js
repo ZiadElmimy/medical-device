@@ -18,30 +18,24 @@ refreshElement.addEventListener('click', () => {
            if(indicator.dataset.sensorMeasure === 'heart-rate') {
                if(data.heart_rate >= 60 && data.heart_rate <= 100) {
                    indicator.classList.remove('up-icon-disabled');
-                   console.log('normal heart rate');
                } else {
                    indicator.classList.add('up-icon-disabled');
-                   console.log('bad heart rate');
                }
            }
 
            if(indicator.dataset.sensorMeasure === 'spo2') {
                if(data.spo2 >= 95 && data.spo2 <= 100) {
                    indicator.classList.remove('up-icon-disabled');
-                   console.log('normal SPO2');
                } else {
                    indicator.classList.add('up-icon-disabled');
-                   console.log('bad SPO2');
                }
            }
 
            if(indicator.dataset.sensorMeasure === 'temperature') {
                if(data.temperature >= 36.1 && data.temperature <= 37.2) {
                    indicator.classList.remove('up-icon-disabled');
-                   console.log('normal temperature');
                } else {
                    indicator.classList.add('up-icon-disabled');
-                   console.log('bad temperature');
                }
            }
        });
@@ -50,30 +44,24 @@ refreshElement.addEventListener('click', () => {
            if(indicator.dataset.sensorMeasure === 'heart-rate') {
                if(data.heart_rate >= 60 && data.heart_rate <= 100) {
                    indicator.classList.add('down-icon-disabled');
-                   console.log('normal heart rate');
                } else {
                    indicator.classList.remove('down-icon-disabled');
-                   console.log('bad heart rate');
                }
            }
 
            if(indicator.dataset.sensorMeasure === 'spo2') {
                if(data.spo2 >= 95 && data.spo2 <= 100) {
                    indicator.classList.add('down-icon-disabled');
-                   console.log('normal SPO2');
                } else {
                    indicator.classList.remove('down-icon-disabled');
-                   console.log('bad SPO2');
                }
            }
 
            if(indicator.dataset.sensorMeasure === 'temperature') {
                if(data.temperature >= 36.1 && data.temperature <= 37.2) {
                    indicator.classList.add('down-icon-disabled');
-                   console.log('normal temperature');
                } else {
                    indicator.classList.remove('down-icon-disabled');
-                   console.log('bad temperature');
                }
            }
        });

@@ -33,8 +33,6 @@ export async function readData() {
         measurements.heart_rate = snapshot.val().Heart_rate;
         measurements.spo2 = snapshot.val().SPO2;
         measurements.temperature = (snapshot.val().Temperature).toFixed(1);
-
-        console.log(measurements);
     })
 
     return measurements;
